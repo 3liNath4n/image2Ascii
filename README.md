@@ -1,4 +1,4 @@
-# Image to ASCII Converter
+Image to ASCII Converter
 
 This project is a simple command-line utility that converts images into ASCII art. It is written in C++ and utilizes the OpenCV library for image processing, allowing users to transform any given image into a unique piece of ASCII art.
 
