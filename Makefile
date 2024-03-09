@@ -1,5 +1,5 @@
-COMPILER = g++ 
-COMPILER_FLAGS = -std=c++17 -I/opt/homebrew/include/opencv4 -O2 
+COMPILER = g++
+COMPILER_FLAGS = -Wall -std=c++17 -I/opt/homebrew/include/opencv4 -O2 
 LINKER_FLAGS = -L/opt/homebrew/lib 
 LINK_LIBRARIES = -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc 
 IMAGE_FILE ?= ""
