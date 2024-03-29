@@ -5,10 +5,11 @@
 
 using namespace std;
 using namespace cv;
+using namespace chrono;
 
 int main(int argc, char *argv[])
 {
-  auto start = chrono::steady_clock::now();
+  auto start = steady_clock::now();
 
   if (argc < 2)
   {
@@ -59,8 +60,8 @@ int main(int argc, char *argv[])
 
   outputFile.close();
 
-  auto end = chrono::steady_clock::now();
-  auto duration = chrono::duration_cast<chrono::milliseconds>(end - start).count();
+  auto end = steady_clock::now();
+  auto duration = duration_cast<milliseconds>(end - start).count();
 
   cout << "ASCII image recreation saved to: " << outputFileName << endl;
   cout << "Execution time: " << duration << " milliseconds" << endl;
